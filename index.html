@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS2</title>
+</head>
+<body>
+<script>
+    var w = window.open();
+    w.document.open();
+
+    var output = "<p>";
+
+    for (let i = 1; i <= 100; i++) {
+        if((i % 3 === 0) && (i % 5 ===0)){
+            output += "Hee Haw!" + "<br>";
+        }
+        else if(i % 3 === 0){
+            output += "Hee!" + "<br>";
+        }
+        else if(i % 5 === 0){
+            output += "Haw!" + "<br>";
+        }
+        else{
+            output += i + "<br>"
+        }
+    }
+    output += "</p>";
+
+
+    w.document.write(output);
+    w.document.close();
+
+</script>
+</body>
+</html>
