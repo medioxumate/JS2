@@ -1,26 +1,26 @@
 /**
+ * Created in PhpStorm
  * @author Brian Kiehn
+ * @date 1/10/2020
  * @version 1.0
- * jsreview2.js - review from chapter 2
- * last edited: 4/10/2019
+ * jsreview2.js
+ * GreenRiverDev
  */
 document.open();
 
-var output = "<p>";
+let output = "<p>";
 
 for (let i = 1; i <= 100; i++) {
-    if((i % 3 === 0) && (i % 5 ===0)){
-        output += "Hee Haw!" + "<br>";
+    if(i % 3 === 0){
+        output += "Hee! ";
     }
-    else if(i % 3 === 0){
-        output += "Hee!" + "<br>";
-    }
-    else if(i % 5 === 0){
-        output += "Haw!" + "<br>";
+    if(i % 5 === 0){
+        output += "Haw!";
     }
     else{
-        output += i + "<br>"
+        output += i;
     }
+    output += "<br>";
 }
 output += "</p>";
 
